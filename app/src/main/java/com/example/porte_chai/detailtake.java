@@ -25,7 +25,6 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.Date;
 
-/* loaded from: classes3.dex */
 public class detailtake extends AppCompatActivity {
     DatabaseReference acc2;
     Button b1,appapply;

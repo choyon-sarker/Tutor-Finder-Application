@@ -40,7 +40,6 @@ public class aboutus extends AppCompatActivity {
         checkconnection();
         setContentView(R.layout.activity_aboutus);
 
-
         RecyclerView recyclerView = findViewById(R.id.message_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         prolist4 = new ArrayList<>();  // Initialize message list
@@ -52,8 +51,6 @@ public class aboutus extends AppCompatActivity {
         this.vapar = currentUser;
         this.userId = currentUser.getUid();
         this.acc2 = FirebaseDatabase.getInstance().getReference().child("users");
-
-
 
         this.refff=FirebaseDatabase.getInstance().getReference().child("users").child(userId);
         this.refff.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -75,13 +72,10 @@ public class aboutus extends AppCompatActivity {
                                     }
                                     aboutus.this.myadapter.notifyDataSetChanged();
                                 }
-
                                 @Override // com.google.firebase.database.ValueEventListener
                                 public void onCancelled(DatabaseError error) {
                                 }
                             });
-
-
                 } else {
 
                 }
@@ -92,15 +86,6 @@ public class aboutus extends AppCompatActivity {
 
             }
         });
-
-
-
-
-        ;
-
-
-
-
     }
     public void checkconnection() {
         ConnectivityManager manager = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);

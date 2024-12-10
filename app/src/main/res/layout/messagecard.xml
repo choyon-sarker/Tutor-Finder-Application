@@ -14,7 +14,7 @@
         app:strokeColor="@color/yellow" app:strokeWidth="2dp"
         android:backgroundTint="@color/white"
         android:layout_margin="10dp"
-        app:cardCornerRadius="20dp">
+        app:cardCornerRadius="10dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -23,7 +23,7 @@
                 android:id="@+id/message_video"
                 android:layout_width="wrap_content"
                 android:layout_height="160dp"
-                android:layout_margin="20dp"
+                android:layout_margin="12dp"
                 android:layout_gravity="center_horizontal"/>
 
             <TextView
@@ -130,14 +130,14 @@
            android:text="Call"
            android:textColor="@color/white"
            app:cornerRadius="20dp" />
+
        <com.google.android.material.button.MaterialButton
-           android:layout_gravity="center_vertical"
-           android:gravity="center"
-           android:layout_marginLeft="70dp"
            android:layout_width="wrap_content"
            android:layout_height="60dp"
-
+           android:layout_gravity="center_vertical"
+           android:layout_marginLeft="70dp"
            android:backgroundTint="@color/green"
+           android:gravity="center"
            android:text="Chat"
            android:textColor="@color/white"
            app:cornerRadius="20dp" />

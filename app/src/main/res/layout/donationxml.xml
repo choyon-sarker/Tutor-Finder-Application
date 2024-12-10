@@ -3,19 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@color/background"
     android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/mycardgi"
-        app:cardElevation="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         app:cardCornerRadius="10dp"
-        android:backgroundTint="#A136BAAF"
-        app:strokeColor="@color/yellow"
+        android:backgroundTint="#E483E0D3"
+        app:strokeColor="#B1006769"
         app:strokeWidth="5dp">
         <LinearLayout
             android:orientation="vertical"

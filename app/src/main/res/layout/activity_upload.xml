@@ -69,7 +69,7 @@
                android:background="@drawable/edittextborder"
                android:backgroundTint="@color/green"
                android:ems="10"
-               android:hint="City"
+               android:hint="Area and City"
                android:inputType="textPersonName"
                android:paddingLeft="5dp"
                android:textColor="@color/green"
@@ -83,8 +83,7 @@
                android:backgroundTint="@color/green"
                android:ems="10"
                android:layout_margin="10dp"
-               android:hint="Time (Format:10:00)"
-               android:inputType="time"
+               android:hint="Time (Format:10:00 AM/PM)"
                android:paddingLeft="5dp"
                android:textColor="@color/green"
                android:textColorHint="@color/green"
@@ -97,7 +96,7 @@
                android:background="@drawable/edittextborder"
                android:backgroundTint="@color/green"
                android:ems="10"
-               android:hint="Salary(Mention details Below)"
+               android:hint="Salary per month"
                android:inputType="phone"
                android:paddingLeft="5dp"
                android:textColor="@color/green"
@@ -108,21 +107,16 @@
            <EditText
                android:id="@+id/editTextTextPersonName10"
                android:layout_width="250dp"
+               android:layout_height="wrap_content"
                android:layout_margin="10dp"
-               android:layout_height="45dp"
                android:background="@drawable/edittextborder"
                android:backgroundTint="@color/green"
                android:ems="10"
-               android:hint="Tell More About ... "
+               android:hint="Details for this post ...\n "
                android:inputType="textPersonName"
                android:paddingLeft="5dp"
                android:textColor="@color/green"
-               android:textColorHint="@color/green"
-               />
-
-
-
-
+               android:textColorHint="@color/green" />
 
            <com.google.android.material.button.MaterialButton
                android:id="@+id/button4"

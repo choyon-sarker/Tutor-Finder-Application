@@ -2,16 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="#69B9F5FF"
     android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/mycardre"
-        app:cardElevation="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         app:cardCornerRadius="10dp"
-        android:backgroundTint="@color/background"
-        app:strokeColor="@color/yellow"
+        android:backgroundTint="#E483E0D3"
+        app:strokeColor="#9D006769"
         app:strokeWidth="5dp">
         <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
             <TextView android:textSize="18sp"
