@@ -60,7 +60,7 @@ public class detailreceiption extends AppCompatActivity {
             this.t7.setText(mbundle.getString("Key"));
         }
         this.name = this.t7.getText().toString();
-        this.b1.setOnClickListener(new View.OnClickListener() { // from class: com.example.food_wastage_management.detailreceiption.1
+        this.b1.setOnClickListener(new View.OnClickListener() {
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 ConnectivityManager manager = (ConnectivityManager) detailreceiption.this.getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -69,7 +69,7 @@ public class detailreceiption extends AppCompatActivity {
                     AlertDialog.Builder alertDialog = new AlertDialog.Builder(detailreceiption.this);
                     alertDialog.setTitle("Delete");
                     alertDialog.setMessage("Are you sure you want to Delete Data?");
-                    alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.detailreceiption.1.1
+                    alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                         @Override // android.content.DialogInterface.OnClickListener
                         public void onClick(DialogInterface dialog, int which) {
                             detailreceiption.this.acc3.child(detailreceiption.this.name).removeValue();
@@ -78,7 +78,7 @@ public class detailreceiption extends AppCompatActivity {
                             detailreceiption.this.finish();
                         }
                     });
-                    alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.detailreceiption.1.2
+                    alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
                         @Override // android.content.DialogInterface.OnClickListener
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();

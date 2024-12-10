@@ -111,7 +111,7 @@ public class detailtake extends AppCompatActivity {
                     AlertDialog.Builder alertDialog = new AlertDialog.Builder(detailtake.this);
                     alertDialog.setTitle("Apply");
                     alertDialog.setMessage("Want to send your Information to Employer? Information Includes Your Name, Number, Age, Intro Video, City, Skill");
-                    alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.detailtake.1.1
+                    alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                         @Override // android.content.DialogInterface.OnClickListener
                         public void onClick(DialogInterface dialog, int which) {
                             Date date = new Date();
@@ -138,7 +138,7 @@ public class detailtake extends AppCompatActivity {
                             detailtake.this.startActivity(new Intent(detailtake.this, homepage2.class));
                         }
                     });
-                    alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.detailtake.1.2
+                    alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
                         @Override // android.content.DialogInterface.OnClickListener
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();
@@ -151,7 +151,7 @@ public class detailtake extends AppCompatActivity {
 
             }
         });
-        this.b1.setOnClickListener(new View.OnClickListener() { // from class: com.example.food_wastage_management.detailtake.1
+        this.b1.setOnClickListener(new View.OnClickListener() {
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 ConnectivityManager manager = (ConnectivityManager) detailtake.this.getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -160,7 +160,7 @@ public class detailtake extends AppCompatActivity {
                     AlertDialog.Builder alertDialog = new AlertDialog.Builder(detailtake.this);
                     alertDialog.setTitle("Message on WhatsApp");
                     alertDialog.setMessage("Are you sure you want to Message?");
-                    alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.detailtake.1.1
+                    alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                         @Override // android.content.DialogInterface.OnClickListener
                         public void onClick(DialogInterface dialog, int which) {
                             String jname = detailtake.this.t1.getText().toString();
@@ -184,7 +184,7 @@ public class detailtake extends AppCompatActivity {
                             }
                         }
                     });
-                    alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.detailtake.1.2
+                    alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
                         @Override // android.content.DialogInterface.OnClickListener
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();

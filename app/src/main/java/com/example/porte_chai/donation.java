@@ -50,7 +50,7 @@ public class donation extends AppCompatActivity {
         this.recycle2.setAdapter(myAdapter2);
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference(this.userId + "given");
         this.refrence2 = reference;
-        reference.addValueEventListener(new ValueEventListener() { // from class: com.example.food_wastage_management.donation.1
+        reference.addValueEventListener(new ValueEventListener() {
             @Override // com.google.firebase.database.ValueEventListener
             public void onDataChange(DataSnapshot snapshot) {
                 donation.this.prolist2.clear();

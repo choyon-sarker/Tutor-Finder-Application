@@ -64,7 +64,7 @@ public class aboutus extends AppCompatActivity {
 
                     FirebaseDatabase refrence = FirebaseDatabase.getInstance();
                     refrence.getReference(phonekey+"Messages")
-                            .addValueEventListener(new ValueEventListener() { // from class: com.example.food_wastage_management.homepage2.3
+                            .addValueEventListener(new ValueEventListener() {
                                 @Override // com.google.firebase.database.ValueEventListener
                                 public void onDataChange(DataSnapshot snapshot) {
                                     aboutus.this.prolist4.clear();

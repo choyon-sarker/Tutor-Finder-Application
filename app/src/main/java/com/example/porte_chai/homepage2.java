@@ -72,7 +72,7 @@ public class homepage2 extends AppCompatActivity {
         MyAdapter myAdapter = new MyAdapter(this, this.prolist);
         this.myadapter = myAdapter;
         this.recycle.setAdapter(myAdapter);
-        this.acc2.child(this.userId).addValueEventListener(new ValueEventListener() { // from class: com.example.food_wastage_management.homepage2.1
+        this.acc2.child(this.userId).addValueEventListener(new ValueEventListener() {
             @Override // com.google.firebase.database.ValueEventListener
             public void onDataChange(DataSnapshot snapshot) {
                 users profile = (users) snapshot.getValue(users.class);
@@ -86,14 +86,13 @@ public class homepage2 extends AppCompatActivity {
             }
         });
         this.refrence = FirebaseDatabase.getInstance().getReference("city");
-        this.f1.setOnClickListener(new View.OnClickListener() { // from class: com.example.food_wastage_management.homepage2.2
+        this.f1.setOnClickListener(new View.OnClickListener() {
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 homepage2.this.startActivity(new Intent(homepage2.this, upload.class));
             }
         });
         this.refrence.addValueEventListener(new ValueEventListener() {
-            // from class: com.example.food_wastage_management.homepage2.3
             @Override // com.google.firebase.database.ValueEventListener
             public void onDataChange(DataSnapshot snapshot) {
                 homepage2.this.prolist.clear();
@@ -109,7 +108,7 @@ public class homepage2 extends AppCompatActivity {
             public void onCancelled(DatabaseError error) {
             }
         });
-        this.txt.addTextChangedListener(new TextWatcher() { // from class: com.example.food_wastage_management.homepage2.4
+        this.txt.addTextChangedListener(new TextWatcher() {
             @Override // android.text.TextWatcher
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
             }
@@ -123,7 +122,7 @@ public class homepage2 extends AppCompatActivity {
                 homepage2.this.filter(editable.toString());
             }
         });
-        this.txt2.addTextChangedListener(new TextWatcher() { // from class: com.example.food_wastage_management.homepage2.5
+        this.txt2.addTextChangedListener(new TextWatcher() {
             @Override // android.text.TextWatcher
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
             }
@@ -137,7 +136,7 @@ public class homepage2 extends AppCompatActivity {
                 homepage2.this.filter2(editable.toString());
             }
         });
-        this.slide.setOnClickListener(new View.OnClickListener() { // from class: com.example.food_wastage_management.homepage2.6
+        this.slide.setOnClickListener(new View.OnClickListener() {
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 homepage2.this.startActivity(new Intent(homepage2.this, slideactivity.class));
@@ -150,7 +149,7 @@ public class homepage2 extends AppCompatActivity {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(homepage2.this);
         alertDialog.setTitle("Exit");
         alertDialog.setMessage("Do you really want to exit app ?");
-        alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.homepage2.7
+        alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialog, int which) {
                 homepage2.this.finish();
@@ -160,7 +159,7 @@ public class homepage2 extends AppCompatActivity {
                 homepage2.this.startActivity(intent);
             }
         });
-        alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.homepage2.8
+        alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();

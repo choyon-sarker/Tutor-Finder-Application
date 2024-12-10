@@ -38,7 +38,7 @@ public class MyAdapter extends RecyclerView.Adapter<productviewholder> {
         holder.jdes.setText(this.prolist.get(position).getJdes());
         holder.jphone.setText(this.prolist.get(position).getJnumber());
         holder.jkey.setText(this.prolist.get(position).getJkey());
-        holder.jccard.setOnClickListener(new View.OnClickListener() { // from class: com.example.food_wastage_management.MyAdapter.1
+        holder.jccard.setOnClickListener(new View.OnClickListener() {
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 Intent intent = new Intent(MyAdapter.this.pcontext, detailtake.class);

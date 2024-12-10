@@ -75,7 +75,7 @@ public class upload extends AppCompatActivity {
         this.acc3 = FirebaseDatabase.getInstance().getReference().child("users");
         this.au = FirebaseAuth.getInstance();
         this.userId = this.vapar.getUid();
-        this.acc2.child(FirebaseAuth.getInstance().getUid()).addValueEventListener(new ValueEventListener() { // from class: com.example.food_wastage_management.upload.1
+        this.acc2.child(FirebaseAuth.getInstance().getUid()).addValueEventListener(new ValueEventListener() {
             @Override // com.google.firebase.database.ValueEventListener
             public void onDataChange(DataSnapshot snapshot) {
                 users profile = (users) snapshot.getValue(users.class);
@@ -90,8 +90,6 @@ public class upload extends AppCompatActivity {
         this.donate.setOnClickListener(new AnonymousClass2());
     }
 
-    /* renamed from: com.example.food_wastage_management.upload$2  reason: invalid class name */
-    /* loaded from: classes3.dex */
     class AnonymousClass2 implements View.OnClickListener {
         AnonymousClass2() {
         }
@@ -123,7 +121,7 @@ public class upload extends AppCompatActivity {
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(upload.this);
                 alertDialog.setTitle("Submit");
                 alertDialog.setMessage("Is information correct?");
-                alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.upload.2.1
+                alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override // android.content.DialogInterface.OnClickListener
                     public void onClick(DialogInterface dialog, int which) {
                         upload.this.p1.setVisibility(View.VISIBLE);
@@ -135,7 +133,7 @@ public class upload extends AppCompatActivity {
                         final String jkey = DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
                         String pstr = upload.this.jphone.getText().toString();
                         final prodata p = new prodata(pstr, jkey, jname, jcity, jclock, jsalary, jdesc);
-                        FirebaseDatabase.getInstance().getReference().child("city").child(jkey).setValue(p).addOnCompleteListener(new OnCompleteListener<Void>() { // from class: com.example.food_wastage_management.upload.2.1.1
+                        FirebaseDatabase.getInstance().getReference().child("city").child(jkey).setValue(p).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override // com.google.android.gms.tasks.OnCompleteListener
                             public void onComplete(Task<Void> task) {
                                 if (task.isSuccessful()) {
@@ -147,7 +145,7 @@ public class upload extends AppCompatActivity {
                         });
                     }
                 });
-                alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.upload.2.2
+                alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override // android.content.DialogInterface.OnClickListener
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();

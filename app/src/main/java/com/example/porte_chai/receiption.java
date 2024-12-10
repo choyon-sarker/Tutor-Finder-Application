@@ -49,7 +49,7 @@ public class receiption extends AppCompatActivity {
         this.recycle3.setAdapter(myAdapter3);
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference(this.userId + "taken");
         this.refrence3 = reference;
-        reference.addValueEventListener(new ValueEventListener() { // from class: com.example.food_wastage_management.receiption.1
+        reference.addValueEventListener(new ValueEventListener() {
             @Override // com.google.firebase.database.ValueEventListener
             public void onDataChange(DataSnapshot snapshot) {
                 receiption.this.prolist3.clear();

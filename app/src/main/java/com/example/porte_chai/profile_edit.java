@@ -156,7 +156,7 @@ public class profile_edit extends AppCompatActivity {
 
 
 
-        child.child(this.userId).addValueEventListener(new ValueEventListener() { // from class: com.example.food_wastage_management.profile_edit.1
+        child.child(this.userId).addValueEventListener(new ValueEventListener() {
             @Override // com.google.firebase.database.ValueEventListener
             public void onDataChange(DataSnapshot snapshot) {
                 users profile = (users) snapshot.getValue(users.class);
@@ -181,7 +181,7 @@ public class profile_edit extends AppCompatActivity {
             }
         });
 
-        this.change.setOnClickListener(new View.OnClickListener() { // from class: com.example.food_wastage_management.profile_edit.2
+        this.change.setOnClickListener(new View.OnClickListener() {
             @Override // android.view.View.OnClickListener
             public void onClick(View view) {
                 ConnectivityManager manager = (ConnectivityManager) profile_edit.this.getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -197,8 +197,7 @@ public class profile_edit extends AppCompatActivity {
         this.delete.setOnClickListener(new AnonymousClass4());
     }
 
-    /* renamed from: com.example.food_wastage_management.profile_edit$3  reason: invalid class name */
-    /* loaded from: classes3.dex */
+
     class AnonymousClass3 implements View.OnClickListener {
         AnonymousClass3() {
         }
@@ -228,7 +227,7 @@ public class profile_edit extends AppCompatActivity {
                 alertDialog.setTitle("Delete");
                 alertDialog.setMessage("Are you sure you want to Update Account?");
                 alertDialog.setPositiveButton("Yes", new AnonymousClass1());
-                alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.profile_edit.3.2
+                alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override // android.content.DialogInterface.OnClickListener
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
@@ -240,8 +239,6 @@ public class profile_edit extends AppCompatActivity {
             Toast.makeText(profile_edit.this, "No Internet Connection", Toast.LENGTH_SHORT).show();
         }
 
-        /* renamed from: com.example.food_wastage_management.profile_edit$3$1  reason: invalid class name */
-        /* loaded from: classes3.dex */
         class AnonymousClass1 implements DialogInterface.OnClickListener {
             AnonymousClass1() {
             }
@@ -249,7 +246,7 @@ public class profile_edit extends AppCompatActivity {
             @Override // android.content.DialogInterface.OnClickListener
             public void onClick(DialogInterface dialog, int which) {
                 profile_edit.this.p1.setVisibility(View.VISIBLE);
-                profile_edit.this.acc2.child(profile_edit.this.userId).addValueEventListener(new ValueEventListener() { // from class: com.example.food_wastage_management.profile_edit.3.1.1
+                profile_edit.this.acc2.child(profile_edit.this.userId).addValueEventListener(new ValueEventListener() {
                     @Override // com.google.firebase.database.ValueEventListener
                     public void onDataChange(DataSnapshot snapshot) {
                         users profile = (users) snapshot.getValue(users.class);
@@ -261,7 +258,7 @@ public class profile_edit extends AppCompatActivity {
                         profile_edit.this.x5 = profile_edit.this.e4.getText().toString();
                         profile_edit.this.x6 = profile_edit.this.e5.getText().toString();
                         users u = new users(profile_edit.this.x1, profile_edit.this.x2, profile_edit.this.x3, profile_edit.this.x4, profile_edit.this.x5, profile_edit.this.x6, profile_edit.this.abc,initial_video_link);
-                        FirebaseDatabase.getInstance().getReference().child("users").child(FirebaseAuth.getInstance().getUid()).setValue(u).addOnCompleteListener(new OnCompleteListener<Void>() { // from class: com.example.food_wastage_management.profile_edit.3.1.1.1
+                        FirebaseDatabase.getInstance().getReference().child("users").child(FirebaseAuth.getInstance().getUid()).setValue(u).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override // com.google.android.gms.tasks.OnCompleteListener
                             public void onComplete(Task<Void> task) {
                                 if (task.isSuccessful()) {
@@ -280,8 +277,6 @@ public class profile_edit extends AppCompatActivity {
         }
     }
 
-    /* renamed from: com.example.food_wastage_management.profile_edit$4  reason: invalid class name */
-    /* loaded from: classes3.dex */
     class AnonymousClass4 implements View.OnClickListener {
         AnonymousClass4() {
         }
@@ -294,11 +289,11 @@ public class profile_edit extends AppCompatActivity {
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(profile_edit.this);
                 alertDialog.setTitle("Delete");
                 alertDialog.setMessage("Are you sure you want to Delete Account?");
-                alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.profile_edit.4.1
+                alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override // android.content.DialogInterface.OnClickListener
                     public void onClick(DialogInterface dialog, int which) {
                         if (profile_edit.this.vapar != null) {
-                            profile_edit.this.vapar.delete().addOnCompleteListener(new OnCompleteListener<Void>() { // from class: com.example.food_wastage_management.profile_edit.4.1.1
+                            profile_edit.this.vapar.delete().addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override // com.google.android.gms.tasks.OnCompleteListener
                                 public void onComplete(Task<Void> task) {
                                     Toast.makeText(profile_edit.this, "Account Deleted Successfully!", Toast.LENGTH_SHORT).show();
@@ -309,7 +304,7 @@ public class profile_edit extends AppCompatActivity {
                         }
                     }
                 });
-                alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.profile_edit.4.2
+                alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override // android.content.DialogInterface.OnClickListener
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();

@@ -49,8 +49,6 @@ public class homepage extends AppCompatActivity {
         this.submit.setOnClickListener(new AnonymousClass1());
     }
 
-    /* renamed from: com.example.food_wastage_management.homepage$1  reason: invalid class name */
-    /* loaded from: classes3.dex */
     class AnonymousClass1 implements View.OnClickListener {
         AnonymousClass1() {
         }
@@ -83,7 +81,7 @@ public class homepage extends AppCompatActivity {
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(homepage.this);
                 alertDialog.setTitle("Submit");
                 alertDialog.setMessage("Is information correct?");
-                alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.homepage.1.1
+                alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override // android.content.DialogInterface.OnClickListener
                     public void onClick(DialogInterface dialog, int which) {
                         homepage.this.p1.setVisibility(View.VISIBLE);
@@ -96,7 +94,7 @@ public class homepage extends AppCompatActivity {
 
                         users u = new users(sname, sphone, sage, skilo, sstreet, scity, "https://firebasestorage.googleapis.com/v0/b/job-portal-app-ac291.appspot.com/o/1_jHCR_94Xae5KMtRgVb70jw.jpg?alt=media&token=9444e736-8d78-4655-9c7d-1a069c57e04f",
                                "https://firebasestorage.googleapis.com/v0/b/job-portal-app-ac291.appspot.com/o/3%20-%201%20-%20%E0%A6%95%E0%A6%A5%E0%A7%87%E0%A6%BE%E0%A6%AA%E0%A6%95%E0%A6%A5%E0%A6%A8%E0%A7%87%E0%A6%B0%20%E0%A6%B6%E0%A6%BE%E0%A6%B2%E0%A7%80%E0%A6%A8%E0%A6%A4%E0%A6%BE.mp4?alt=media&token=d7326f76-93c1-40a2-a86b-bd60653cacf1" );
-                        FirebaseDatabase.getInstance().getReference().child("users").child(FirebaseAuth.getInstance().getUid()).setValue(u).addOnCompleteListener(new OnCompleteListener<Void>() { // from class: com.example.food_wastage_management.homepage.1.1.1
+                        FirebaseDatabase.getInstance().getReference().child("users").child(FirebaseAuth.getInstance().getUid()).setValue(u).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override // com.google.android.gms.tasks.OnCompleteListener
                             public void onComplete(Task<Void> task) {
                                 if (task.isSuccessful()) {
@@ -107,7 +105,7 @@ public class homepage extends AppCompatActivity {
                         });
                     }
                 });
-                alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() { // from class: com.example.food_wastage_management.homepage.1.2
+                alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override // android.content.DialogInterface.OnClickListener
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
