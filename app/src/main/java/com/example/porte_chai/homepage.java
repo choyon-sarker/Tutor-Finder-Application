@@ -63,7 +63,7 @@ public class homepage extends AppCompatActivity {
                 if (homepage.this.name.length() < 2 || homepage.this.name.length() > 50) {
                     homepage.this.name.setError("Enter Proper Name");
                 }
-                if (homepage.this.phone.length() < 10 || homepage.this.phone.length() > 10) {
+                if (homepage.this.phone.length() < 11 || homepage.this.phone.length() > 11) {
                     homepage.this.phone.setError("Enter 10 digit number");
                 }
                 if (homepage.this.age.length() < 1 || homepage.this.age.length() > 3) {
