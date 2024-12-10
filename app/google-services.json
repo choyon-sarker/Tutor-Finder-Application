@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "777158578208",
+    "firebase_url": "https://job-portal-app-ac291-default-rtdb.firebaseio.com",
+    "project_id": "job-portal-app-ac291",
+    "storage_bucket": "job-portal-app-ac291.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777158578208:android:add88890018107b5f42c45",
+        "android_client_info": {
+          "package_name": "com.example.food_wastage_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQaFd-DRPh37Qkp5R8j4egewnGQWUeTDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777158578208:android:d5b62ea8fd96fecaf42c45",
+        "android_client_info": {
+          "package_name": "com.example.porte_chai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQaFd-DRPh37Qkp5R8j4egewnGQWUeTDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

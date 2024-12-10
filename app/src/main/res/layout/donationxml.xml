@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mycardgi"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#A136BAAF"
+        app:strokeColor="@color/yellow"
+        app:strokeWidth="5dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/jTitleTextViewgi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Job Title"/>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Location : "/>
+                <TextView android:id="@+id/jCityTextViewgi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dhaka"/>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Salary: "/>
+                <TextView android:id="@+id/jSalaryTextViewgi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Time: "/>
+                <TextView
+                    android:id="@+id/jTimeTextViewgi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Description: "/>
+                <TextView android:id="@+id/jDesTextViewgi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/jKeyTextViewgi"
+                    android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Key"
+                    android:layout_weight="1"/>
+                <TextView android:id="@+id/jPhoneTextViewgi"
+                    android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="Phone"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mycard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#6CC8B3"
+        app:strokeColor="#6FC1AF"
+        android:elevation="20dp"
+        app:strokeWidth="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/jTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Job Title"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_margin="6dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location : " />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:id="@+id/jCityTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nashik" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salary: " />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:id="@+id/jSalaryTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time: " />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:id="@+id/jTimeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description: " />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:id="@+id/jDesTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/jKeyTextView"
+                    android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Key"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/jPhoneTextView"
+                    android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

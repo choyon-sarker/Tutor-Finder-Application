@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/green"
+        android:text="Complete Registration"
+        android:textSize="30dp"
+        android:layout_marginBottom="36dp"
+        android:textStyle="bold"
+        />
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="20dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Name :"/>
+            <EditText
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:id="@+id/editTextTextPersonName3"
+                android:background="@drawable/edittextborder"
+                android:paddingLeft="5dp"
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:hint="Name"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:backgroundTint="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Phone :"/>
+            <EditText
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:id="@+id/editTextTextPersonName4"
+                android:background="@drawable/edittextborder"
+                android:paddingLeft="5dp"
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:hint="Phone"
+                android:ems="10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:inputType="phone"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="City :"/>
+            <EditText
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:id="@+id/editTextTextPersonName5"
+                android:background="@drawable/edittextborder"
+                android:paddingLeft="5dp"
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:hint="Current City"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:backgroundTint="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Occupation :"/>
+            <EditText
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:id="@+id/editTextTextPersonName6"
+                android:background="@drawable/edittextborder"
+                android:paddingLeft="5dp"
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:hint="Skills/Occupation"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:backgroundTint="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Age :"/>
+            <EditText
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:id="@+id/editTextTextPersonName7"
+                android:background="@drawable/edittextborder"
+                android:paddingLeft="5dp"
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:hint="Age"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:backgroundTint="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Location :"/>
+            <EditText
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:id="@+id/editTextTextPersonName8"
+                android:background="@drawable/edittextborder"
+                android:paddingLeft="5dp"
+                android:textSize="16dp"
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:hint="Current Address"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:backgroundTint="@color/black"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/button3"
+            android:layout_width="134dp"
+            android:layout_height="54dp"
+            android:text="Submit"
+            android:backgroundTint="@color/yellow"
+            app:cornerRadius="20dp"
+
+            app:strokeColor="@color/black" app:strokeWidth="1dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+    <ProgressBar
+        android:id="@+id/progressBar5"
+        android:visibility="invisible"
+        android:layout_width="89dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?android:attr/progressBarStyle"/>
+</LinearLayout>
